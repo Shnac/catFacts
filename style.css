@@ -1,0 +1,42 @@
+.catHeader {
+  background:
+    /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./images/catHeader.jpg");
+  background-size: cover;
+  height: 650px;
+  padding-bottom: calc(100% / aspect-ratio-of-image);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.whiteFontColor {
+  color: whitesmoke;
+}
+
+h1 {
+  color: whitesmoke;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.custom-list {
+  list-style: none;
+  padding-left: 20px; /* Add some spacing for the custom image */
+}
+
+.custom-list h3::before {
+  content: ""; /* Empty content before each list item */
+  display: inline-block;
+  width: 30px; /* Width of your custom image */
+  height: 30px; /* Height of your custom image */
+  background-image: url("./images/catPaw.png"); /* Path to your custom image */
+  background-size: cover;
+  margin-right: 10px; /* Add some spacing between the custom image and the text */
+}
